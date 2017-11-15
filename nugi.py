@@ -4,90 +4,34 @@ import LINETCR
 from LINETCR.lib.curve.ttypes import *
 from datetime import datetime
 from bs4 import BeautifulSoup
-import time, random, sys, re, os, json, subprocess, threading, string, codecs, requests, tweepy, ctypes, urllib, urllib2, wikipedia
+import time, random, sys, re, os, json, subprocess, threading, string, codecs, requests, ctypes, urllib, urllib2
 
 cl = LINETCR.LINE()
-cl.login(token="EmZMiC3V1ZV70KrEMMw6.TZBfSxLpwQmajTfI0hZL5G.11k6S1sUlX9SbdA8oDJustBIJVGyobI+e3SFkBE2g8g=")
+cl.login(token=" Token ")
 cl.loginResult()
 
 ki = LINETCR.LINE()
-ki.login(token="EmfUsg0drkp2fEBi9Qrb.BNyZ+h9RxCUErhI47z2TsW.zP88/CrIW13pa4qwh5FWcAP0dO+OfD820zCPF4pX5oc=")
+ki.login(token=" Token ")
 ki.loginResult()
 
 kk = LINETCR.LINE()
-kk.login(token="EmspKirwbEjemqqHJUb7.PxA11UvF6+oIj1J2xHVgHW.DD+N4SDD7wvuasJsGnmW5plCMBHpI1kffIFV9ma44Kc=")
+kk.login(token=" Token ")
 kk.loginResult()
 
 kc = LINETCR.LINE()
-kc.login(token="EmdpE54Je1ojetkXmKQd.3ZijQj/+HYJ/+9NTGXTdBq.Dkv3tBOnJ4DsvFu6ER5mK2zR7h0FRAW0/FJyZiSD2Fs=")
+kc.login(token=" Token )
 kc.loginResult()
 
 kd = LINETCR.LINE()
-kd.login(token="Emesgp6g4xLptFAcKEe2.HczpEpY3698wuSB+TzCDKG.vFtZpDippE+ZkQxxVEDn1BmpjyM+z+f/x4/Lo+cAFlk=")
+kd.login(token=" Token )
 kd.loginResult()
 
-ke = LINETCR.LINE()
-ke.login(token="EmMtwsiInIfBXPVS5fYa.i/2QVqxGpVzmWQXItt4HYG.cfbtejgIlGQE3TTAg7FlMWcE1/6kwokKNe3wDg1gztM=")
-ke.loginResult()
-
-kf = LINETCR.LINE()
-kf.login(token="EmCxepD4zQoJp5IhDbta.DP7HM0ARnuIu/2g0+3pMUG./+3rQ+luem39IsiuASywPOVjmG+0TpJhMpmZowgn8yI=")
-kf.loginResult()
-
-kg = LINETCR.LINE()
-kg.login(token="Eme45nZDSATx9C6vYxRa.M5S4YxDWvhoYOasbMPWroG.Tq/iSCV68m9567XK4xxEGSXOAOVJEPwNW+odUm/BwT4=")
-kg.loginResult()
-
-kh = LINETCR.LINE()
-kh.login(token="EmIRhD60WnHD3t4FET34.9gH7ABV+xQLJo9i7SbFX5a.Yr0Yii0G3ouW7kOEMdXrPongIIs0Q2ab9Q0xUiRLfHI=")
-kh.loginResult()
-
-kj = LINETCR.LINE()
-kj.login(token="EmLppwNR3nIRHTOtPilb.8udcfgLi7ehlJbE2o+xCkW.QzwPU+t85FDCd/TcU0H5NdPq0MUzuCXRzaZPRp1O/mY=")
-kj.loginResult()
-
-kl = LINETCR.LINE()
-kl.login(token="EmYDhAhUQqmCaUB8SZA4.XzkQX6Z6SKas/aWEdxhG9a.HTgYRulRHxXSc+72zLVfT2VLIRVZvh4ImQvEtU6KxBg=")
-kl.loginResult()
-
-km = LINETCR.LINE()
-km.login(token="EmCXaH6hkxN7L4iWpyGa.M18YOGKVCrQRdiHWLocYoG.Bga5dUzA36+J0GekTRX7Sz5R9vrUWYaxXn7rGrXUPBc=")
-km.loginResult()
-
-kn = LINETCR.LINE()
-kn.login(token="EmjOueAJz9I4iNjWUPm0.xk6CFUa1TffEm+BFjYuhCa.pk6HGOsm6rlBtQLo4D48hQAaLUBlOgUJx0qGfVEpyc8=")
-kn.loginResult()
-
-ko = LINETCR.LINE()
-ko.login(token="Em44M0djUhjilmwO5eW4.gNyro7TbVPOq9q7KfxZ6ja.fD1FXX13tI04xIuOkhGBE5+F3sywEuweexo1C/GxJ1U=")
-ko.loginResult()
-
-kp = LINETCR.LINE()
-kp.login(token="Emm6NUELDiThHb11mo63.beFYyPfuxT1XkkxB0z7bOW.iKoovhLczCH/Pd0VtVxhYA/x5NpywVyBiceIZwcxI2s=")
-kp.loginResult()
-
-kq = LINETCR.LINE()
-kq.login(token="EmTyM8gXpOZkJwy0hnK3.Zcwf6HrGpji9sCc98VTOeW.suZo5gb/3FZ2hEFhe2+t+gomNdr1GnH0566EGnElV58=")
-kq.loginResult()
-
-kr = LINETCR.LINE()
-kr.login(token="Emaas45PFxDMQU2svLIa.r5CTm/T+B9J2h3ZXLAhq6G.od8/LyM8B5Luv7HiYiew3n0zS1uLfsyqd5Nja1SeApM=")
-kr.loginResult()
-
-ks = LINETCR.LINE()
-ks.login(token="Emwfi9Mdukz6QroWpHQ7.bHov9ONJEzx2Ya/PwMshPW.0DaYTC4xiCU3AaklyQNCVxoRowvu47htNMQNGM/Jpo8=")
-ks.loginResult()
-
-kt = LINETCR.LINE()
-kt.login(token="EmLX3yrZguae6q822s49.HKYa3NeUc1iHvq5GaRXJgq.yAuKmCAeoHK8R/5p65i8x1N8Ek1an6ywPurnBBEq/jQ=")
-kt.loginResult()
-
-print "Tamii Bot"
+print "Nugi Bot"
 reload(sys)
 sys.setdefaultencoding('utf-8')
-helpMessage ="""
+helpMessage ="""꧁ৡৢৢ͜͡ৢS̵̩̥̬̳͎̥͗̇̿́͛͑͛̓͢͝e̢̡͈̥͒̈̍̓́̍͆͜͡l̛̟͓̺̲̝̳̫̩̠̅̈́̍̿͘͝ḟ̴͔͈̜͓̪̊́̋̉̇͗͐̚͠ ̵̨͇͙͙̺̲͇͖̯͕́̆͗̓́̍͘̚͞͞ஜ۩[⑄̶̶̶̲̄ṉ̅ūgī̶̲۩ஜৢৢ͜͡ৡৢ꧂
 
->==========S̵̩̥̬̳͎̥͗̇̿́͛͑͛̓͢͝e̢̡͈̥͒̈̍̓́̍͆͜͡l̛̟͓̺̲̝̳̫̩̠̅̈́̍̿͘͝ḟ̴͔͈̜͓̪̊́̋̉̇͗͐̚͠ C̷̡͖̭͕̗̐̓̎̿̚̕͜͜͢͡ͅo̧̩̙̙̹̰͇̅̑̿͘͝ṃ̵̫͔̣̣̬͇̄̅͛͗̕m̷̜͕̣͎͔̤͗̍̿̐͞͞͝ą̸̛͚̹̫̯̖̈͑͊̕n̝̟͎͉͍̪͚̪͖̈́̑͌̇̀̏d̛̥̙͕̯̲͔͙͍̾̍̓͘͞ I̛͕̮̝͉̞̯̞̜̓̎̂͐͒̒̕͢ń̵̨͇͙͙̺̲͇͖̯͕̆͗̓́̍͘̚͞͞ Ḡ̢̖̙͖̮̀̄͑̃̓́̆̚r̴̻̝͕̭̘̎̐͑͆͟͜͜͝o̫̞̤͉̪͉̿͐̏̓̕̕ú̝͖̠͎̅́̌͊̀̏̊͟͠͠p̷̝̮̰̺̫̬̤̗̒͒̉̾̀̅̾͊̿̈́ͅ----->
+>=====S̵̩̥̬̳͎̥͗̇̿́͛͑͛̓͢͝e̢̡͈̥͒̈̍̓́̍͆͜͡l̛̟͓̺̲̝̳̫̩̠̅̈́̍̿͘͝ḟ̴͔͈̜͓̪̊́̋̉̇͗͐̚͠ ̵̨͇͙͙̺̲͇͖̯͕́̆͗̓́̍͘̚͞͞ N̫̞̤͉̪͉̿͐̏̓̕̕ú̝͖̠͎̅́̌͊̀̏̊͟͠͠Ḡ̢̖̙͖̮̀̄͑̃̓́̆̚ l̛̟͓̺̲̝̳̫̩̠̅̈́̍̿͘͝ Ḡ̢̖̙͖̮̀̄͑̃̓́̆̚r̴̻̝͕̭̘̎̐͑͆͟͜͜͝o̫̞̤͉̪͉̿͐̏̓̕̕ú̝͖̠͎̅́̌͊̀̏̊͟͠͠p̷̝̮̰̺̫̬̤̗̒͒̉̾̀̅̾͊̿̈́ͅ----->
 
 ��✒ Me
 ��✒ Id
@@ -187,31 +131,17 @@ helpMessage ="""
 ��✒ Protect On/off
 ��✒ Namelock On/off
 
-��✒ Creator 👇👇
-��✒ http://line.me/ti/p/jlEouH0zr3
+꧁ৡৢৢ͜͡ৢ👿 Creator 👿ৢৢ͜͡ৡৢ꧂
 
-��✒ C͍͇̪̲͎̯͎̫̩̽̅̈́̅̌́̍̐ŗ̛͔̳͔̦́̋͛̎e̶̮̳͕͍̺̼̱͎͛̃̾̍̑̐ǻ͕͍̻̭̟̪͒́́̎̕͘̕͟t̢̠̻̗̠͙̦͒̉̈̎͂̐͒͑o̸̡̲̜̯̤͚̠̬͊̓̌̄̒͠r̵̺̲̗̩͙̐̇̾̐͐̏̃̓́̊ B̝̪̭͓͍̺͐͂̑̅̓͗͗̈́͢y͚͔̝͖̮̤͚̅̉̑̐̓̀̋̊͂͜͜͢͞:̶̨̻̪͓̦̻̋̾̂̽̎͘͜͜ Ţ̸̡̫̙͎̰̜͎͚̎̀͗̌̏͛͌͜a̛̛̪̱̳͉͚̹̣̦̼͒͗͆̿͋͡͠m̰̬͇̭̔̓́̓͢͞ĩ̡̢̥̰̤̗̩̥̥̫́̐̔̾̾͂̚͠͝i̴͙̦̹̫̾̈̿̈́̊̃̆͒͜͢͞ ��✒•┅───── """
+👿🕵✒ C͍͇̪̲͎̯͎̫̩̽̅̈́̅̌́̍̐ŗ̛͔̳͔̦́̋͛̎e̶̮̳͕͍̺̼̱͎͛̃̾̍̑̐ǻ͕͍̻̭̟̪͒́́̎̕͘̕͟t̢̠̻̗̠͙̦͒̉̈̎͂̐͒͑o̸̡̲̜̯̤͚̠̬͊̓̌̄̒͠r̵̺̲̗̩͙̐̇̾̐͐̏̃̓́̊ B̝̪̭͓͍̺͐͂̑̅̓͗͗̈́͢y͚͔̝͖̮̤͚̅̉̑̐̓̀̋̊͂͜͜͢͞:̶̨̻̪͓̦̻̋̾̂̽̎͘͜͜ ̵̨͇͙͙̺̲͇͖̯͕́̆͗̓́̍͘̚͞͞ N̫̞̤͉̪͉̿͐̏̓̕̕ú̝͖̠͎̅́̌͊̀̏̊͟͠͠Ḡ̢̖̙͖̮̀̄͑̃̓́̆̚l̛̟͓̺̲̝̳̫̩̠̅̈́̍̿͘͝•┅─────  """
 
-KAC=[cl,ki,kk,kc,kd,ke,kf,kg,kh,kj,kl,km,kn,ko,kp,kq,kr,ks,kt]
+KAC=[cl,ki,kk,kc,kd]
 mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
 Cmid = kc.getProfile().mid
 Dmid = kd.getProfile().mid
-Emid = ke.getProfile().mid
-Fmid = kf.getProfile().mid
-Gmid = kg.getProfile().mid
-Hmid = kh.getProfile().mid
-Jmid = kj.getProfile().mid
-Lmid = kl.getProfile().mid
-Mmid = km.getProfile().mid
-Nmid = kn.getProfile().mid
-Omid = ko.getProfile().mid
-Pmid = kp.getProfile().mid
-Qmid = kq.getProfile().mid
-Rmid = kr.getProfile().mid
-Smid = ks.getProfile().mid
-Tmid = kt.getProfile().mid
+
 protectname = []
 protecturl = []
 protection = []
@@ -219,19 +149,19 @@ autocancel = {}
 autoinvite = []
 autoleaveroom = []
 targets = []
-Bots=[mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Jmid,Lmid,Mmid,Nmid,Omid,Pmid,Qmid,Rmid,Smid,Tmid]
-admin = ["ub736c5b1794f5aa30026d162d07ce5e6",mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Jmid,Lmid,Mmid,Nmid,Omid,Pmid,Qmid,Rmid,Smid,Tmid]
-owner = ["ub736c5b1794f5aa30026d162d07ce5e6",mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Jmid,Lmid,Mmid,Nmid,Omid,Pmid,Qmid,Rmid,Smid,Tmid]
+Bots=[mid,Amid,Bmid,Cmid,Dmid]
+admin = [" isi mid ",mid,Amid,Bmid,Cmid,Dmid]
+owner = [" isi mid ",mid,Amid,Bmid,Cmid,Dmid]
 wait = {
     'contact':False,
     'autoJoin':False,
-    'autoCancel':{"on":True, "members":1},
+    'autoCancel':{"on":False, "members":1},
     'leaveRoom':False,
     'timeline':True,
     'autoAdd':False,
-    'message':"Thanks for add Me MY NAME IS TAMII",
+    'message':"Thanks for add Me MY 👿🕵✒ C͍͇̪̲͎̯͎̫̩̽̅̈́̅̌́̍̐ŗ̛͔̳͔̦́̋͛̎e̶̮̳͕͍̺̼̱͎͛̃̾̍̑̐ǻ͕͍̻̭̟̪͒́́̎̕͘̕͟t̢̠̻̗̠͙̦͒̉̈̎͂̐͒͑o̸̡̲̜̯̤͚̠̬͊̓̌̄̒͠r̵̺̲̗̩͙̐̇̾̐͐̏̃̓́̊ B̝̪̭͓͍̺͐͂̑̅̓͗͗̈́͢y͚͔̝͖̮̤͚̅̉̑̐̓̀̋̊͂͜͜͢͞:̶̨̻̪͓̦̻̋̾̂̽̎͘͜͜ ̵̨͇͙͙̺̲͇͖̯͕́̆͗̓́̍͘̚͞͞ N̫̞̤͉̪͉̿͐̏̓̕̕ú̝͖̠͎̅́̌͊̀̏̊͟͠͠Ḡ̢̖̙͖̮̀̄͑̃̓́̆̚l̛̟͓̺̲̝̳̫̩̠̅̈́̍̿͘͝•┅─────  ",
     "lang":"JP",
-    "comment":"AutoLike by Tamii",
+    "comment":"AutoLike by 👿🕵✒ C͍͇̪̲͎̯͎̫̩̽̅̈́̅̌́̍̐ŗ̛͔̳͔̦́̋͛̎e̶̮̳͕͍̺̼̱͎͛̃̾̍̑̐ǻ͕͍̻̭̟̪͒́́̎̕͘̕͟t̢̠̻̗̠͙̦͒̉̈̎͂̐͒͑o̸̡̲̜̯̤͚̠̬͊̓̌̄̒͠r̵̺̲̗̩͙̐̇̾̐͐̏̃̓́̊ B̝̪̭͓͍̺͐͂̑̅̓͗͗̈́͢y͚͔̝͖̮̤͚̅̉̑̐̓̀̋̊͂͜͜͢͞:̶̨̻̪͓̦̻̋̾̂̽̎͘͜͜ ̵̨͇͙͙̺̲͇͖̯͕́̆͗̓́̍͘̚͞͞ N̫̞̤͉̪͉̿͐̏̓̕̕ú̝͖̠͎̅́̌͊̀̏̊͟͠͠Ḡ̢̖̙͖̮̀̄͑̃̓́̆̚l̛̟͓̺̲̝̳̫̩̠̅̈́̍̿͘͝•┅───── ",
     "commentOn":True,
     "commentBlack":{},
     "wblack":False,
@@ -301,90 +231,6 @@ backup.pictureStatus = contact.pictureStatus
 
 contact = kd.getProfile()
 backup = kd.getProfile()
-backup.displayName = contact.displayName
-backup.statusMessage = contact.statusMessage
-backup.pictureStatus = contact.pictureStatus
-
-contact = ke.getProfile()
-backup = ke.getProfile()
-backup.displayName = contact.displayName
-backup.statusMessage = contact.statusMessage
-backup.pictureStatus = contact.pictureStatus
-
-contact = kf.getProfile()
-backup = kf.getProfile()
-backup.displayName = contact.displayName
-backup.statusMessage = contact.statusMessage
-backup.pictureStatus = contact.pictureStatus
-
-contact = kg.getProfile()
-backup = kg.getProfile()
-backup.displayName = contact.displayName
-backup.statusMessage = contact.statusMessage
-backup.pictureStatus = contact.pictureStatus
-
-contact = kh.getProfile()
-backup = kh.getProfile()
-backup.displayName = contact.displayName
-backup.statusMessage = contact.statusMessage
-backup.pictureStatus = contact.pictureStatus
-
-contact = kj.getProfile()
-backup = kj.getProfile()
-backup.displayName = contact.displayName
-backup.statusMessage = contact.statusMessage
-backup.pictureStatus = contact.pictureStatus
-
-contact = kl.getProfile()
-backup = kl.getProfile()
-backup.displayName = contact.displayName
-backup.statusMessage = contact.statusMessage
-backup.pictureStatus = contact.pictureStatus
-
-contact = km.getProfile()
-backup = km.getProfile()
-backup.displayName = contact.displayName
-backup.statusMessage = contact.statusMessage
-backup.pictureStatus = contact.pictureStatus
-
-contact = kn.getProfile()
-backup = kn.getProfile()
-backup.displayName = contact.displayName
-backup.statusMessage = contact.statusMessage
-backup.pictureStatus = contact.pictureStatus
-
-contact = ko.getProfile()
-backup = ko.getProfile()
-backup.displayName = contact.displayName
-backup.statusMessage = contact.statusMessage
-backup.pictureStatus = contact.pictureStatus
-
-contact = kp.getProfile()
-backup = kp.getProfile()
-backup.displayName = contact.displayName
-backup.statusMessage = contact.statusMessage
-backup.pictureStatus = contact.pictureStatus
-
-contact = kq.getProfile()
-backup = kq.getProfile()
-backup.displayName = contact.displayName
-backup.statusMessage = contact.statusMessage
-backup.pictureStatus = contact.pictureStatus
-
-contact = kr.getProfile()
-backup = kr.getProfile()
-backup.displayName = contact.displayName
-backup.statusMessage = contact.statusMessage
-backup.pictureStatus = contact.pictureStatus
-
-contact = ks.getProfile()
-backup = ks.getProfile()
-backup.displayName = contact.displayName
-backup.statusMessage = contact.statusMessage
-backup.pictureStatus = contact.pictureStatus
-
-contact = kt.getProfile()
-backup = kt.getProfile()
 backup.displayName = contact.displayName
 backup.statusMessage = contact.statusMessage
 backup.pictureStatus = contact.pictureStatus
@@ -3291,8 +3137,6 @@ def bot(op):
             elif msg.text in ["Set"]:
             	print "Setting pick up..."
                 md = "[☸]�� SETTING ADMIN ONLY ��[☸]\n"
-                
-                
                 if wait["likeOn"] == True: md+="��Auto like : on\n"
                 else:md+="��Auto like : off\n"
                 if wait["copy"] == True: md+="��Mimic : on\n"
@@ -4648,7 +4492,7 @@ def bot(op):
                 start = time.time()
                 cl.sendText(msg.to, "Access time Waiting...")
                 elapsed_time = time.time() - start
-                cl.sendText(msg.to, "%s<==Tamii Server" % (elapsed_time))
+                cl.sendText(msg.to, "%s<==Nugi Server" % (elapsed_time))
 # ----------------- BAN MEMBER BY TAG 2TAG ATAU 10TAG MEMBER
             elif ("Bl " in msg.text):
               if msg.from_ in admin:
